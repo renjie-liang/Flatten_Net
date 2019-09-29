@@ -1,0 +1,35 @@
+MODEL:
+  ENCODER_NAME: HiddenNet
+  DECODER_NAME: BASE_Decoder
+  NOSIER_NAME: BASE_Noiser
+  LOSS_NAME: MSELoss
+  ENCODER_LOSS: 0.7
+  DECODER_LOSS: 1
+
+DATA_LOADER:
+  DATA_DIR:  ../datasets
+
+Noiser:
+  SET_LIST: crop((0.2,0.3),(0.4,0.5))+cropout((0.11,0.22),(0.33,0.44))+dropout(0.2,0.3)+jpeg()
+
+
+DATA_SET:
+  H_IMG: 128
+  W_IMG: 128
+  H_WM: 3
+  W_WM: 10
+
+TRAIN:
+  EPOCHS: 20
+  DATA_DIR: ../datasets
+
+
+HiddenNet:
+  IMG_ENCODER_CHANNELS: 64 
+  IMG_ENCODER_BLOCKS: 4
+  ENABLE_FP16: False
+
+BASE_Decoder:
+  DECODER_CHANNELS: 64
+  DECODER_BLOCKS: 7
+

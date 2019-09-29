@@ -1,0 +1,12 @@
+MODEL:
+  NET_NAME: LeNet_5_CIFAR
+  LOSS_NAME: nll_loss
+
+DATA_LOADER:
+  DATA_DIR:  ../datasets
+
+
+
+TRAIN:
+  EPOCHS: 100
+  PRINT_STEP: 1000
