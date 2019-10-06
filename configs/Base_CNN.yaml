@@ -1,5 +1,5 @@
 MODEL:
-  NET_NAME: LeNet_5_CIFAR_Flatten
+  NET_NAME: LeNet_5_CIFAR
   LOSS_NAME: nll_loss
 
 DATA_LOADER:
