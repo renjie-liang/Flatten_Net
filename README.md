@@ -12,5 +12,5 @@ My version has a disadvantage, too slow. This is because $img2col$ function is i
 In the future, I prepare implement img2col by cuda code.
 
 reference: 
-[1]:https://zhuanlan.zhihu.com/p/40951745
+1. https://zhuanlan.zhihu.com/p/40951745
 
